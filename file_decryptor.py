@@ -1,5 +1,6 @@
 from cryptography.fernet import Fernet
 import sys
+import os
 from time import sleep
 
 # access
@@ -31,3 +32,16 @@ print("""File decrypted
 {0} - {1}
 Decryption completed
 """.format(file_name,file_to))
+
+sleep(0.5)
+input("To avoid confusion between the encrypted and decrpyted, please press enter to delete the encrypted file. ")
+sleep(1)
+try:
+    confirm = input("Please enter the file path/name to confirm :")
+    os.remove(confirm)
+    print("File removed successfully")
+    sleep(1)
+except NameError:
+    print("Error: File not found!")
+    print("Try again!")
+    sleep(1)
