@@ -38,11 +38,6 @@ dele = input("For safety reasons please press enter to delete the unencrypted or
 sleep(0.5)
 print("Ok")
 
-    confirm = input("Please enter the file path/name to confirm :")
-    os.remove(filename)
-    print("File removed successfully")
-    sleep(1)
-
-    print("Error: File not found!")
-    print("Try again!")
-    sleep(1)
+os.remove(filename)
+print("File removed successfully")
+sleep(2)
