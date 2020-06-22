@@ -40,4 +40,4 @@ sleep(1)
 
 os.remove(file_name)
 print("File removed successfully")
-sleep(1)
+sleep(2)
