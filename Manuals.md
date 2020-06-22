@@ -20,4 +20,11 @@ Open ''key_generate'' you will find it opening and then closing itself, don't wo
 
 Next open the ''File_Encrytptor'' You will find that it asks a password, the password is "692008" this is just to ensure that the right person encrypts or decrypts the data If you don't want the password you can of course remove the password or change it
 
-So now after you enter the password it will say "File to encrypt." Now before doing anything, just save a blank text document to experiment and write some text in it. (Make sure it's in the same directory or just copy the whole file path)
+So now after you enter the password it will say "File to encrypt." Now before doing anything, just save a blank text document to experiment and write some text in it. (Make sure it's in the same directory or just copy the whole file path).
+
+Now write the document name which you have save.
+It will then ask what do you want the file name after encryption.
+Give a desired name including the file extenstion
+Now it will encrypt the file and now it will ask to delete the non-encrypted file, simply press enter.
+It will ask the file path to confirm
+Be sure that you give it the correct file path of the previous unencrypted file
