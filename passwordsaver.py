@@ -1,6 +1,5 @@
-# Don't Blame me if some one stole your passwords
-# I will find a solution to encrypt the data
-# Other information
+# Encrypt and Decrypt this file whenever neseccary
+# Importing modules
 from time import sleep
 import sys
 
