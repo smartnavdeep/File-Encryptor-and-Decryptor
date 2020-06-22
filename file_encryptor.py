@@ -39,7 +39,7 @@ dele = input("For safety reasons please press enter to delete the unencrypted or
 print("Ok")
 try:
     confirm = input("Please enter the file path/name to confirm :")
-    os.remove(confirm)
+    os.remove(filename)
     print("File removed successfully")
     sleep(1)
 except NameError:
