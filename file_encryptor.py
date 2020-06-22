@@ -34,7 +34,7 @@ print("""File Encrypted successfully
 {0} - {1}
 """.format(filename,file_to))
 
-dele = input("For safety reasons please press enter to delete the unencrypted original file ?")
+dele = input("For safety reasons please press enter to delete the unencrypted original file..")
 sleep(0.5)
 print("Ok")
 
