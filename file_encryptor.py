@@ -34,15 +34,15 @@ print("""File Encrypted successfully
 {0} - {1}
 """.format(filename,file_to))
 
-dele = input("For safety reasons do you want to delete the original file ?").replace("es", "").replace("o", "")
-if dele == "y":
-    print("Ok")
-    try:
-        confirm = input("Please enter the file path/name to confirm :")
-        os.remove(confirm)
-        print("File removed successfully")
-        sleep(1)
-    except NameError:
-        print("Error: File not found!")
-        print("Try again!")
-        sleep(1)
+dele = input("For safety reasons please press enter to delete the unencrypted original file ?")
+
+print("Ok")
+try:
+    confirm = input("Please enter the file path/name to confirm :")
+    os.remove(confirm)
+    print("File removed successfully")
+    sleep(1)
+except NameError:
+    print("Error: File not found!")
+    print("Try again!")
+    sleep(1)
