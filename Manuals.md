@@ -1,23 +1,18 @@
 # Manuals
-Hello everyone, these are the official manuals for this repository So before we begin please download the whole repository as a zip file and then extract them, this will help you to understand all the stuff which i'm gonna explain here
+Hello everyone, these are the official manuals for this repository.
+So before we begin please download the whole repository as a zip file and then extract them, this will help you to understand all the stuff which i'm gonna explain here
 
 So first things first open the file which you have downloaded
 
 You will see these file:
 
-File_Decrytptor
-
-File_Encryptor
-
-key.txt
-
-key_generate
-
-Manuals.md
-
-passwordsaver.py
-
-Readme.md
+1. File_Decrytptor
+2. File_Encryptor
+3. key.txt
+4. key_generate
+5. Manuals.md
+6. passwordsaver.py
+7. Readme.md
 
 Before you do anything in that file, do the following :
 
