@@ -47,19 +47,23 @@ def dec():
 
     print("""File decrypted successfully.""")
 # Ask Enc-Dec
+while True:
+    try:
+        
+        enc_dec = input("What do you want to run ? Encryption or Decryption.").lower().replace(" ", "")
+        enc_dec = enc_dec[0:3]
+        genrate()
+        if enc_dec=='enc':
+            
+            enc()
+            
+        if enc_dec=='dec':
+            
+            dec()
 
-enc_dec = input("What do you want to run ? Encryption or Decryption.").lower().replace(" ", "")
-enc_dec = enc_dec[0:3]
-genrate()
-if enc_dec=='enc':
-    
-    enc()
-    
-if enc_dec=='dec':
-    
-    dec()
-
-else:
-    print('Error : Mode#not#choosen#correctly.')
+        else:
+            print('Error : Mode#not#choosen#correctly.')
+    except:
+        print('Somthing went wrong !')
 
 # End
