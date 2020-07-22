@@ -1,4 +1,3 @@
-# All in one File Encryptor and Decryptor.
 # Start
 
 from cryptography.fernet import Fernet
@@ -64,6 +63,7 @@ while True:
         else:
             print('Error : Mode#not#choosen#correctly.')
     except:
-        print('Somthing went wrong !')
+        print('''Oops! Somthing went wrong !
+        Please make sure that you weren't trying to decrypt a decrypted file.''')
 
 # End
