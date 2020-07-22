@@ -1,3 +1,4 @@
+# All in one File Encryptor and Decryptor.
 # Start
 
 from cryptography.fernet import Fernet
@@ -47,8 +48,9 @@ def dec():
     print("""File decrypted successfully.""")
 # Ask Enc-Dec
 
-enc_dec = input("What do you want to run ? Encryption or Decryption.")
-
+enc_dec = input("What do you want to run ? Encryption or Decryption.").lower().replace(" ", "")
+enc_dec = enc_dec[0:3]
+genrate()
 if enc_dec=='enc':
     
     enc()
