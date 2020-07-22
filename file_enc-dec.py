@@ -1,4 +1,3 @@
-# All in one file.
 # Start
 
 from cryptography.fernet import Fernet
@@ -35,7 +34,7 @@ def enc():
     sleep(1)
 # Decryption
 def dec():
-    
+
     file_name = input("Enter the file name which must be decrypted :")
     with open(file_name,'rb') as f:
         data = f.read()
@@ -51,12 +50,14 @@ def dec():
 enc_dec = input("What do you want to run ? Encryption or Decryption.")
 
 if enc_dec=='enc':
-
+    
+    enc()
     
 if enc_dec=='dec':
-        
+    
+    dec()
 
-    else:
-        print('Error : Mode#not#choosen#correctly.')
+else:
+    print('Error : Mode#not#choosen#correctly.')
 
 # End
