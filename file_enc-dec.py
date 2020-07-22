@@ -1,5 +1,4 @@
-# The all in ine file coder.
-
+# All in one file.
 # Start
 
 from cryptography.fernet import Fernet
@@ -8,7 +7,7 @@ import sys
 from time import sleep
 # Funcy Funtions
 
-# Key
+# Key written
 def genrate():
     key = Fernet.generate_key()
 
@@ -18,15 +17,9 @@ def genrate():
     file = open("key.txt","wb")
     file.write(key)
     file.close()
-# Key written
-
 # Key Over
-# Ask Enc-Dec
-
-enc_dec = input("What do you want to run ? Encryption or Decryption.")
-
-if enc_dec=='enc':
-
+# Encryption
+def enc():
     filename = input("File to Encrypt : ")
     with open(filename,'rb') as f:
         data = f.read()
@@ -40,17 +33,28 @@ if enc_dec=='enc':
 
     print("""File Encrypted successfully.""")
     sleep(1)
-    if enc_dec=='dec':
-        file_name = input("Enter the file name which must be decrypted :")
-        with open(file_name,'rb') as f:
-            data = f.read()
+# Decryption
+def dec():
+    
+    file_name = input("Enter the file name which must be decrypted :")
+    with open(file_name,'rb') as f:
+        data = f.read()
 
-        f2 = Fernet(key)
-        decrypted = decrypted = f2.decrypt(data)
-        with open(file_name,'wb') as fileD:
-            fileD.write(decrypted)
+    f2 = Fernet(key)
+    decrypted = decrypted = f2.decrypt(data)
+    with open(file_name,'wb') as fileD:
+        fileD.write(decrypted)
 
-        print("""File decrypted successfully.""")
+    print("""File decrypted successfully.""")
+# Ask Enc-Dec
+
+enc_dec = input("What do you want to run ? Encryption or Decryption.")
+
+if enc_dec=='enc':
+
+    
+if enc_dec=='dec':
+        
 
     else:
         print('Error : Mode#not#choosen#correctly.')
