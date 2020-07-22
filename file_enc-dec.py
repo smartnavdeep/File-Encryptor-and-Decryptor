@@ -48,7 +48,7 @@ def dec():
 # Ask Enc-Dec
 while True:
     try:
-        
+        genrate()
         enc_dec = input("What do you want to run ? Encryption or Decryption.").lower().replace(" ", "")
         enc_dec = enc_dec[0:3]
         genrate()
