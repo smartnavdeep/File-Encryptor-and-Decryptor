@@ -72,7 +72,7 @@ print('')
 if mode=='enc':
     print('Ok')
     enc()
-if mode=='dec':
+elif mode=='dec':
     print('Ok')
     dec()
 else:
