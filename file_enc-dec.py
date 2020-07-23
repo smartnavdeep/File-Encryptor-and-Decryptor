@@ -13,22 +13,27 @@ def generate_the_key():
 
 def enc():
 
-    keyfile = open('key.txt','rb')
-    key = keyfile.read()
-    keyfile.close()
+    try:
 
-    filename = input("File to Encrypt : ")
-    with open(filename,'rb') as f:
-        data = f.read()
+        keyfile = open('key.txt','rb')
+        key = keyfile.read()
+        keyfile.close()
 
-    fernet = Fernet(key)
-    encrypted = fernet.encrypt(data)
+        filename = input(r"File to Encrypt : ")
+        with open(filename,'rb') as f:
+            data = f.read()
+
+        fernet = Fernet(key)
+        encrypted = fernet.encrypt(data)
 
 
-    with open(filename,'wb') as f:
-        f.write(encrypted)
+        with open(filename,'wb') as f:
+            f.write(encrypted)
 
-    print("""File Encrypted successfully""")
+        print("""File Encrypted successfully""")
+
+    except:
+        print('Oops! File not Found.')
 
 def dec():
 
