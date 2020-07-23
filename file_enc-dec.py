@@ -1,13 +1,16 @@
 # Start
 from cryptography.fernet import Fernet
 from time import sleep 
+# Some info
+
+key = Fernet.generate_key()
+
 # Functions
+
 
 def enc():
 
     try:
-
-        key = 'jZguGbaOG4ZZTHP55fGeyFA4bGlFcgLjBjkbsKZtpps='
 
         filename = input(r"File to Encrypt : ")
         with open(filename,'rb') as f:
@@ -23,13 +26,11 @@ def enc():
         print("""File Encrypted successfully""")
         sleep(0.5)
     except:
-        print('Oops! File not Found.')
+        print('Oops! Some thing went wrong! PLease make sure you entered the correct file name or maybe you typed to open a binary file.')
 
 def dec():
 
     try:
-
-        key = 'jZguGbaOG4ZZTHP55fGeyFA4bGlFcgLjBjkbsKZtpps='
 
         file_name = input("File to Decrypt : ")
         with open(file_name,'rb') as f:
@@ -44,7 +45,7 @@ def dec():
         print("""File decrypted successfully.""")
         sleep(0.5)    
     except:
-        print('Oops! File not Found.')
+        print('Oops! Some thing went wrong! PLease make sure you entered the correct file name or maybe you typed to open a binary file.')
 
 
 # End of funtions
