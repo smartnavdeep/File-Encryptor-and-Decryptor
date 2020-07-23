@@ -18,6 +18,18 @@ print("Hello my name is Enc and Dec.")
 sleep(0.5)
 print('')
 
-user_file=r(input('What do you want ot run: Encryption or Decryption : '))
+mode=r(input('What do you want ot run: Encryption or Decryption : ')).lower().replace(" ", "")
+mode=mode[0:3]
+print('')
+
+if mode=='enc':
+    print('Ok')
+
+
+if mode=='dec':
+    print('Ok')
+
+else:
+    print('Correct Method not choosen !')
 
 # End
