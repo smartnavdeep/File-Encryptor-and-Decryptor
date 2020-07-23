@@ -7,7 +7,6 @@ key = Fernet.generate_key()
 
 # Functions
 
-
 def enc():
 
     try:
