@@ -4,16 +4,17 @@ from time import sleep
 # Functions
 
 def generate_the_key():
+
     key = Fernet.generate_key()
 
     file = open("key.txt","wb")
     file.write(key)
     file.close()
 
-def enc(parameter_list):
+def enc():
     pass
 
-def dec(parameter_list):
+def dec():
     pass
 
 # End of funtions
