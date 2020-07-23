@@ -31,6 +31,7 @@ def enc():
             f.write(encrypted)
 
         print("""File Encrypted successfully""")
+        sleep(0.5)
     except:
         print('Oops! File not Found.')
 
@@ -53,6 +54,7 @@ def dec():
             fileD.write(decrypted)
 
         print("""File decrypted successfully.""")
+        sleep(0.5)    
     except:
         print('Oops! File not Found.')
 
@@ -72,9 +74,11 @@ while True:
 
     if mode=='enc':
         print('Ok')
+        print('')
         enc()
     elif mode=='dec':
         print('Ok')
+        print('')
         dec()
     else:
         print('Correct Method not choosen !')
