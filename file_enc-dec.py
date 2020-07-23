@@ -12,13 +12,31 @@ def generate_the_key():
     file.close()
 
 def enc():
-    pass
+
+    keyfile = open('key.txt','rb')
+    key = keyfile.read()
+    keyfile.close()
+
+    filename = input("File to Encrypt : ")
+    with open(filename,'rb') as f:
+        data = f.read()
+
+    fernet = Fernet(key)
+    encrypted = fernet.encrypt(data)
+
+
+    with open(filename,'wb') as f:
+        f.write(encrypted)
+
+    print("""File Encrypted successfully""")
 
 def dec():
     pass
 
 # End of funtions
 # Execution
+
+generate_the_key()
 print("Hello my name is Enc and Dec.")
 sleep(0.5)
 print('')
