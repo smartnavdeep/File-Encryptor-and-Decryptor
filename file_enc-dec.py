@@ -37,21 +37,26 @@ def enc():
 
 def dec():
 
-    keyfile = open('key.txt','rb')
-    key = keyfile.read()
-    keyfile.close()
+    try:
 
-    file_name = input("File to Decrypt : ")
-    with open(file_name,'rb') as f:
-        data = f.read()
+        keyfile = open('key.txt','rb')
+        key = keyfile.read()
+        keyfile.close()
 
-    f2 = Fernet(key)
-    decrypted = decrypted = f2.decrypt(data)
+        file_name = input("File to Decrypt : ")
+        with open(file_name,'rb') as f:
+            data = f.read()
 
-    with open(file_name,'wb') as fileD:
-        fileD.write(decrypted)
+        f2 = Fernet(key)
+        decrypted = decrypted = f2.decrypt(data)
 
-    print("""File decrypted successfully.""")
+        with open(file_name,'wb') as fileD:
+            fileD.write(decrypted)
+
+        print("""File decrypted successfully.""")
+
+    except:
+        print('Oops! File not Found.')
 
 
 # End of funtions
