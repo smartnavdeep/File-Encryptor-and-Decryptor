@@ -65,7 +65,7 @@ print("Hello my name is Enc and Dec.")
 sleep(0.5)
 print('')
 
-mode=input('What do you want ot run: Encryption or Decryption : ').lower().replace(" ", "")
+mode=input('What do you want to run: Encryption or Decryption : ').lower().replace(" ", "")
 mode=mode[0:3]
 print('')
 
