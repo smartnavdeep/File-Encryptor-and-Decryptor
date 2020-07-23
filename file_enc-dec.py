@@ -31,7 +31,23 @@ def enc():
     print("""File Encrypted successfully""")
 
 def dec():
-    pass
+
+    keyfile = open('key.txt','rb')
+    key = keyfile.read()
+    keyfile.close()
+
+    file_name = input("File to Decrypt : ")
+    with open(file_name,'rb') as f:
+        data = f.read()
+
+    f2 = Fernet(key)
+    decrypted = decrypted = f2.decrypt(data)
+
+    with open(file_name,'wb') as fileD:
+        fileD.write(decrypted)
+
+    print("""File decrypted successfully.""")
+
 
 # End of funtions
 # Execution
