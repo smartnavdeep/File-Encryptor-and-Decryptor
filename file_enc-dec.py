@@ -71,8 +71,10 @@ print('')
 
 if mode=='enc':
     print('Ok')
+    enc()
 if mode=='dec':
     print('Ok')
+    dec()
 else:
     print('Correct Method not choosen !')
 
