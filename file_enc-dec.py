@@ -4,7 +4,11 @@ from time import sleep
 # Functions
 
 def generate_the_key():
-    pass
+    key = Fernet.generate_key()
+
+    file = open("key.txt","wb")
+    file.write(key)
+    file.close()
 
 def enc(parameter_list):
     pass
@@ -18,7 +22,7 @@ print("Hello my name is Enc and Dec.")
 sleep(0.5)
 print('')
 
-mode=r(input('What do you want ot run: Encryption or Decryption : ')).lower().replace(" ", "")
+mode=input('What do you want ot run: Encryption or Decryption : ').lower().replace(" ", "")
 mode=mode[0:3]
 print('')
 
