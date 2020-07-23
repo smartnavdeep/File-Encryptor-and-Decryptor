@@ -65,17 +65,18 @@ print("Hello my name is Enc and Dec.")
 sleep(0.5)
 print('')
 
-mode=input('What do you want to run: Encryption or Decryption : ').lower().replace(" ", "")
-mode=mode[0:3]
-print('')
+while True:
+    mode=input('What do you want to run: Encryption or Decryption : ').lower().replace(" ", "")
+    mode=mode[0:3]
+    print('')
 
-if mode=='enc':
-    print('Ok')
-    enc()
-elif mode=='dec':
-    print('Ok')
-    dec()
-else:
-    print('Correct Method not choosen !')
+    if mode=='enc':
+        print('Ok')
+        enc()
+    elif mode=='dec':
+        print('Ok')
+        dec()
+    else:
+        print('Correct Method not choosen !')
 
 # End
