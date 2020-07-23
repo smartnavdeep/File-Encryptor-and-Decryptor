@@ -3,7 +3,7 @@ from cryptography.fernet import Fernet
 
 # Functions
 
-def generatethekey():
+def generate_the_key():
     pass
 
 def enc(parameter_list):
@@ -13,5 +13,6 @@ def dec(parameter_list):
     pass
 
 # End of funtions
+# Execution
 
 # End
