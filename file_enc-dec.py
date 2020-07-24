@@ -4,7 +4,7 @@ from time import sleep
 # Some info
 
 key = Fernet.generate_key()
-
+error1,error2="""File not found!""","""Error: Tried open Binary"""
 # Functions
 
 
