@@ -25,8 +25,8 @@ def enc():
 
         print("""File Encrypted successfully""")
         sleep(0.5)
-    except:
-        print()
+    except FileNotFoundError:
+        print(error1)
 
 def dec():
 
@@ -44,8 +44,8 @@ def dec():
 
         print("""File decrypted successfully.""")
         sleep(0.5)    
-    except:
-        print()
+    except FileNotFoundError:
+        print(error1)
 
 
 # End of funtions
