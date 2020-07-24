@@ -2,7 +2,7 @@
 from cryptography.fernet import Fernet
 from time import sleep 
 # Some info
-error='Oops! Some thing went wrong! Please make sure you entered the correct file name or maybe you typed to open a binary file.'
+
 key = Fernet.generate_key()
 
 # Functions
@@ -26,7 +26,7 @@ def enc():
         print("""File Encrypted successfully""")
         sleep(0.5)
     except:
-        print(error)
+        print()
 
 def dec():
 
@@ -45,7 +45,7 @@ def dec():
         print("""File decrypted successfully.""")
         sleep(0.5)    
     except:
-        print(error)
+        print()
 
 
 # End of funtions
