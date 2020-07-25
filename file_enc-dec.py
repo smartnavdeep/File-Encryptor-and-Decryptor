@@ -1,11 +1,22 @@
 # Start
 from cryptography.fernet import Fernet
-from time import sleep 
+from time import sleep
+import sys
 # Some info
-
+passnum=692008
 key = Fernet.generate_key()
 error1,error2="""File not found!""","""Error: Tried open Binary"""
 # Functions
+def verification():
+    try:
+        passcode=int(input('Enter your Passcode:').replace(' ',''))
+        if passcode==passnum:
+            print('Access granted.')
+        else:
+            print('Access denied!')
+    except ValueError:
+        print('Pascode is not any number, passcode must be an interger.')
+
 
 def enc():
 
