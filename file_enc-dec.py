@@ -14,6 +14,10 @@ def verification():
             print('Access granted.')
         else:
             print('Access denied!')
+            sleep(0.5)
+            print("Bye !")
+            sleep(0.5)
+            sys.exit()
     except ValueError:
         print('Pascode is not any number, passcode must be an interger.')
 
@@ -37,6 +41,7 @@ def enc():
         sleep(0.5)
     except FileNotFoundError:
         print(error1)
+
 
 def dec():
 
@@ -63,6 +68,8 @@ def dec():
 
 print("Hello my name is Enc and Dec.")
 sleep(0.5)
+print('')
+verification()
 print('')
 
 while True:
