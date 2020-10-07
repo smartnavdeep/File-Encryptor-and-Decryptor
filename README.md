@@ -2,7 +2,7 @@
 
 This will encrypt a file and then decrypt the file whenever necessary.
 Just Follow the Steps.
-At first, it will ask the passcode, the passcode is '692008'
+
 ## What sets it aside from other Python encryptors
 I have embedded the encryptor and decrytors
 ## Status
