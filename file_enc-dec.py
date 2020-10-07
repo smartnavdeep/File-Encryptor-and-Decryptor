@@ -7,20 +7,6 @@ passnum=692008
 key = Fernet.generate_key()
 error1,error2="""File not found!""","""Error: Tried open Binary"""
 # Functions
-def verification():
-    try:
-        passcode=int(input('Enter your Passcode:').replace(' ',''))
-        if passcode==passnum:
-            print('Access granted.')
-        else:
-            print('Access denied!')
-            sleep(0.5)
-            print("Bye !")
-            sleep(0.5)
-            sys.exit()
-    except ValueError:
-        print('Pascode is not any number, passcode must be an interger.')
-
 
 def enc():
 
@@ -69,9 +55,6 @@ def dec():
 print("Hello my name is Enc and Dec.")
 sleep(0.5)
 print('')
-verification()
-print('')
-
 while True:
     mode=input('What do you want to run: Encryption or Decryption : ').lower().replace(" ", "")
     mode=mode[0:3]
